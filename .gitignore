@@ -1,0 +1,33 @@
+# mode: public — only framework files are tracked (fail-closed).
+# Managed by /visibility. Everything is ignored unless whitelisted below:
+# your life (area folders, inbox, artifacts, tmp, private/) can never be
+# committed by accident.
+/*
+
+# ── Framework whitelist ──────────────────────────────────────────────
+!/.gitignore
+!/.gitattributes
+!/CLAUDE.md
+!/README.md
+!/LICENSE
+!/.claude/
+/.claude/*
+!/.claude/settings.json
+!/.claude/skills/
+
+# ── Personal layer: never track, even if the whitelist changes ───────
+CLAUDE.local.md
+.claude/settings.local.json
+.claude/rules/
+private/
+.env
+.env.*
+**/*secret*
+
+# ── OS cruft, anywhere ───────────────────────────────────────────────
+Thumbs.db
+desktop.ini
+.DS_Store
+~$*
+*.tmp
+*.bak

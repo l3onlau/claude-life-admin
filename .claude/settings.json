@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git status:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "PowerShell(git status:*)",
+      "PowerShell(git log:*)",
+      "PowerShell(git diff:*)"
+    ],
+    "deny": [
+      "Read(./private/**)",
+      "Edit(./private/**)",
+      "Read(./.env*)",
+      "Bash(git push --force:*)",
+      "PowerShell(git push --force:*)"
+    ]
+  }
+}

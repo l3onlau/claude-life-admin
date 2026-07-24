@@ -1,0 +1,21 @@
+# mode: private — life content is versioned too, so git history becomes
+# memory. NEVER push this branch to a public remote; run "/visibility
+# public" (and read its history audit) before publishing anything.
+# Managed by /visibility.
+
+# ── Never tracked in ANY mode ────────────────────────────────────────
+private/
+.env
+.env.*
+**/*secret*
+.claude/settings.local.json
+artifacts/
+tmp/
+
+# ── OS cruft, anywhere ───────────────────────────────────────────────
+Thumbs.db
+desktop.ini
+.DS_Store
+~$*
+*.tmp
+*.bak
